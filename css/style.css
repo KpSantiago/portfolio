@@ -1,0 +1,82 @@
+* {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+}
+
+header div {
+    width: 300px;
+    height: 70px;
+    border: 3px solid #0fd;
+    border-top: 2px solid transparent;
+}
+
+#home p:nth-of-type(1) {
+    font-size: 1.5rem;
+    color: #fffa;
+}
+
+.title {
+    font-size: 8rem;
+    text-shadow: 0 0 20px #0fd;
+}
+
+.title+p {
+    color: #fffa;
+    font-size: 1.5rem;
+}
+
+#particle-js {
+    z-index: 1;
+}
+
+img:not(.me) {
+    opacity: .02;
+}
+
+.item {
+    background-color: #161616;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    box-shadow: 5px 3px 10px 0 rgba(0, 0, 0, 0.2), -5px -3px 10px 0 rgba(200, 200, 200, 0.03);
+    border-radius: 16px;
+    padding: 10px;
+    transition: all .4s;
+    position: relative;
+    z-index: 2;
+}
+
+
+#skills .item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 14px 0#0fda;
+}
+
+.item p {
+    font-size: 27px;
+}
+
+iconoify-icon {
+    width: 200px;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0fd;
+}

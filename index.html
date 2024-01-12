@@ -16,8 +16,13 @@
 </head>
 
 <body class="bg-[#101010] max-w-screen min-h-screen flex flex-col">
-  <header class="bg-[#101010] relative z-2 bg-transparent w-full max-w-full h-fit flex justify-center">
-    <div class="bg-[#121212] min-w-[600px] w-[75%] h-[70px] rounded-br-[30px] rounded-bl-[30px]">
+  <div class="mh">
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+  <header class="header bg-[#101010] relative z-2 bg-transparent w-full max-w-full h-fit flex justify-center">
+    <div class="hdr bg-[#121212] min-w-[600px] w-[75%] h-[70px] rounded-br-[30px] rounded-bl-[30px]">
       <ul class="h-full flex justify-center items-center gap-8 text-2xl">
         <li><a href="#home" class="p-3 hover:text-[#0fd] duration-200">Início</a></li>
         <li><a href="#about" class="p-3 hover:text-[#0fd] duration-200">Sobre mim</a></li>
@@ -27,7 +32,7 @@
     </div>
   </header>
   <div id="home" class="section overflow-x-hidden relative">
-    <div id="particles-js" class="absolute z-1"></div>
+    <div id="particles-js" class="absolute top-0 left-0 z-1"></div>
     <div class="infos h-full w-full absolute z-2 flex flex-col justify-center items-center">
       <p>Olá, sou</p>
       <h1 class="title text-[#0fd] font-bold">Kauã Santiago</h1>
@@ -39,14 +44,14 @@
     <img src="./img/r7.png" alt="" class="absolute top-0  right-0 z-1">
     <img src="./img/r7.png" alt="" class="absolute bottom-0 left-0 rotate-[180deg] z-1">
     <div class="infos max-w-[85%] text-center relative z-2">
-      <div class="profile w-full mb-6 flex justify-center items-center gap-3">
+      <div class="profile w-full mb-6 flex flex-wrap justify-center items-center gap-3">
         <img src="./img/me.jpeg" alt="" class="me h-[200px] rounded-[35px]">
-        <div>
-          <h2 class="text-[2.2rem] text-left font-bold">Kauã José Pereira Santiago</h2>
+        <div class="pinf">
+          <h2 class="text-[2.2rem] text-left font-bold whitespace-nowrap">Kauã José Pereira Santiago</h2>
           <p class="text-[1.4rem] text-left">Web developer full-stack</p>
         </div>
       </div>
-      <p class="broken-all text-[1.2rem]">
+      <p class="txt broken-all text-[1.2rem]">
         Olá! Kauã falando, atualmente sou Web Developer fullstack, tenho experiência com várias tecnologias, dentre elas
         Angular 13, NodeJS, MySQL e um pouco de React, amo programar, coloco sempre o meu máximo nos para que eles sejam
         levados ao mais alto nível, sou bom em solucionar problemas e, se eu não sei a solução, procuro e estudo sempre
@@ -157,6 +162,7 @@
   </div>
   <script src="./particles.js"></script>
   <script src="./demo/js/app.js"></script>
+  <script src="./js/index.js"></script>
   <script>
     var count_particles, stats, update;
     stats = new Stats;

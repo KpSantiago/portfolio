@@ -6,6 +6,7 @@
 html,
 body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 header {
@@ -91,4 +92,167 @@ iconoify-icon {
     max-width: 100%;
     position: relative;
     z-index: 1;
+}
+
+.mh {
+    display: none;
+}
+
+@media (max-width: 985px) {
+    #home {
+        min-height: 100vh;
+        width: 100vw;
+    }
+
+    #home h1 {
+        font-size: 5.5rem;
+    }
+
+    .mh p {
+        transition: all .4s;
+    }
+
+    .mh {
+        width: 50px;
+        min-height: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 9999;
+        top: 30px;
+        left: 30px;
+    }
+
+    .mh p {
+        background-color: #fff;
+        width: 100%;
+        min-height: 4px;
+    }
+
+    .mh p:nth-child(1),
+    .mh p:nth-child(3) {
+        width: 65%;
+    }
+
+    .mh p:nth-child(1) {
+        align-self: flex-end;
+    }
+
+    .mh p:nth-child(3) {
+        align-self: start;
+    }
+
+    .header {
+        background-color: #161616;
+        width: 0;
+        height: 100vh;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        transition: all .5s;
+    }
+
+    .header .hdr {
+        min-width: 100%;
+        min-height: 100%;
+        opacity: 0;
+        position: relative;
+        z-index: 999;
+    }
+
+    header.actived {
+        min-height: 100vh;
+        width: 55vw;
+    }
+
+    header.actived .hdr,
+    header.actived .hdr ul {
+        opacity: 1;
+        border: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 35px;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .mh.actived p:nth-child(2) {
+        width: 0;
+        align-self: center;
+    }
+
+    .mh.actived p:first-child,
+    .mh.actived p:last-child {
+        width: 75%;
+        transition-delay: .2s;
+    }
+
+    .mh.actived p:first-child {
+        transform: translate(-11px, 10px) rotate(-45deg);
+    }
+
+    .mh.actived p:last-child {
+        transform: translate(2px, -20px) rotate(45deg);
+    }
+}
+
+@media (max-width: 723px) {
+    #home h1 {
+        font-size: 4.5rem;
+    }
+
+    #about .infos {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #about .txt {
+        text-align: justify;
+    }
+
+    #about h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 650px) {
+    #home h1 {
+        font-size: 4.5rem;
+    }
+
+    #about .profile .pinf p {
+        text-align: center;
+    }
+
+    #about .txt {
+        text-align: justify;
+    }
+
+    #about h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 568px) {
+    #home h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 428px) {
+    #home h1 {
+        font-size: 2.5rem;
+    }
+
+    #home p {
+        font-size: 1.2rem;
+    }
+
+    #projetos .item {
+        transform: scale(.87);
+    }
 }

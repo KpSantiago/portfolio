@@ -267,7 +267,7 @@ iconoify-icon {
 @media (max-width: 840px) {
 
     .project,
-    .project:hover:disabled {
+    .project:hover {
         transform: scale(1);
     }
 
@@ -308,7 +308,7 @@ iconoify-icon {
 @media (max-width: 650px) {
 
     .project,
-    .project:hover:disabled {
+    .project:hover {
         transform: scale(.9);
     }
 

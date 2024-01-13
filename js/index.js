@@ -63,7 +63,7 @@ projects_array.map(p => {
     <div class="project rounded-[20px] duration-200 relative z-2 p-0 hover:translate-y-[-10px]">
         <a target="_blank" href="${p.link_project}">
         <img src="${p.img_url}" alt="" class="h-full w-full brightness-[30%] object-cover rounded-[20px]">
-        <div class="info w-full min-h-full rounded-[20px] absolute z-2 top-0 left-0 overflow-hidden">
+        <div class="info w-full h-full rounded-[20px] absolute z-2 top-0 left-0 overflow-hidden">
             <div class="txt">
                 <h2 class="font-semibold mb-3">${p.nome}</h2>
                 <p class="flex items-center gap-3">

@@ -264,6 +264,17 @@ iconoify-icon {
     }
 }
 
+@media (max-width: 768px) {
+    .project img {
+        height: 50%;
+    }
+
+    .project .info .txt {
+        background-color: #151515;
+        transform: translateY(27%);
+    }
+}
+
 @media (max-width: 723px) {
     #home h1 {
         font-size: 4.5rem;
@@ -338,14 +349,5 @@ iconoify-icon {
 
     .project {
         transform: scale(.6);
-    }
-
-    .project img {
-        height: 50%;
-    }
-
-    .project .info .txt {
-        background-color: #151515;
-        transform: translateY(27%);
     }
 }

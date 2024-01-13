@@ -267,9 +267,9 @@ iconoify-icon {
 @media (max-width: 840px) {
     .project,
     .project:hover {
-        transform: scale(1);
+        transform: scale(.9);
     }
-    
+
     .project img {
         height: 50%;
     }
@@ -297,9 +297,17 @@ iconoify-icon {
     #about h2 {
         font-size: 28px;
     }
+    .project,
+    .project:hover {
+        transform: scale(.9);
+    }
 }
 
 @media (max-width: 650px) {
+    .project,
+    .project:hover {
+        transform: scale(.9);
+    }
     #home h1 {
         font-size: 4.5rem;
     }

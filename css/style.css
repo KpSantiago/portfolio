@@ -121,7 +121,7 @@ iconoify-icon {
     transition: all .3s;
 }
 
-.project:hover img {
+.project img {
     height: 50%;
 }
 
@@ -136,7 +136,7 @@ iconoify-icon {
     transform: translateY(80%);
 }
 
-.project .info:hover .txt {
+.project .info .txt {
     background-color: #151515;
     transform: translateY(27%);
 }

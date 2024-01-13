@@ -1,7 +1,5 @@
 const mh = document.querySelector('.mh');
 const header = document.querySelector('.header');
-const info = document.querySelector('.project .info');
-const txtInfo = document.querySelector('.project .info .txt');
 let projects = document.querySelector('.projects');
 const projects_array = [
     {
@@ -48,7 +46,7 @@ const projects_array = [
         nome: ' Lamborghini Remake',
         img_url: './img/lambo.png',
         technologies: [{ nome: 'logos:react' }, { nome: 'vscode-icons:file-type-typescript-official' }],
-        sinopse: `L.B. é um projeto que fiz como atividade escolar, no qual teríamos que fazer uma landing page em React.`,
+        sinopse: `L.R. é um projeto que fiz como atividade escolar, no qual teríamos que fazer uma landing page em React.`,
         link_project: 'https://lamb-remake.netlify.app'
     }
 ];
@@ -60,7 +58,7 @@ mh.addEventListener('click', () => {
 
 projects_array.map(p => {
     projects.innerHTML += `  
-    <div class="project rounded-[20px] duration-200 relative z-2 p-0 hover:translate-y-[-10px]">
+    <div class="project rounded-[20px] relative z-2 p-0 hover:translate-y-[-10px] duration-200 ">
         <a target="_blank" href="${p.link_project}">
         <img src="${p.img_url}" alt="" class="h-full w-full brightness-[30%] object-cover rounded-[20px]">
         <div class="info w-full h-full rounded-[20px] absolute z-2 top-0 left-0 overflow-hidden">

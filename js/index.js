@@ -58,17 +58,17 @@ mh.addEventListener('click', () => {
 
 projects_array.map(p => {
     projects.innerHTML += `  
-    <div class="project rounded-[20px] relative z-2 p-0 hover:translate-y-[-10px] duration-200 ">
+    <div class="project rounded-[20px] relative z-2 p-0">
         <a target="_blank" href="${p.link_project}">
-        <img src="${p.img_url}" alt="" class="h-full w-full brightness-[30%] object-cover rounded-[20px]">
+        <img src="${p.img_url}" alt="" class="h-full w-full brightness-[30%] hover:brightness-75 duration-200 object-cover rounded-[20px]">
         <div class="info w-full h-full rounded-[20px] absolute z-2 top-0 left-0 overflow-hidden">
             <div class="txt">
                 <h2 class="font-semibold mb-3">${p.nome}</h2>
                 <p class="flex items-center gap-3">
                     Tecnologias:
                     ${p.technologies.map(t => {
-                        return `<iconify-icon icon="${t.nome}" width="30" height="30"></iconify-icon>`
-                    })}
+        return `<iconify-icon icon="${t.nome}" width="30" height="30"></iconify-icon>`
+    })}
                 </p>
                 <div>${p.sinopse}</div>
             </div>

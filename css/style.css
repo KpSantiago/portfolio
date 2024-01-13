@@ -265,6 +265,11 @@ iconoify-icon {
 }
 
 @media (max-width: 840px) {
+    .project,
+    .project:hover {
+        transform: scale(1);
+    }
+    
     .project img {
         height: 50%;
     }
@@ -313,7 +318,6 @@ iconoify-icon {
 }
 
 @media (max-width: 623px) {
-
     .project,
     .project:hover {
         transform: scale(.8);
@@ -347,7 +351,7 @@ iconoify-icon {
         text-align: center;
     }
 
-    .project {
+    .project, .project:hover {
         transform: scale(.6);
     }
 }

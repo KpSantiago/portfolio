@@ -8,8 +8,8 @@
   <meta name="author" content="Vincent Garreau" />
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" media="screen" href="css/style.css">
   <link rel="stylesheet" media="screen" href="./demo/css/particle.css">
+  <link rel="stylesheet" media="screen" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
@@ -21,167 +21,174 @@
     <p></p>
     <p></p>
   </div>
-  <header class="header bg-[#101010] relative z-2 bg-transparent w-full max-w-full h-fit flex justify-center">
-    <div class="hdr bg-[#121212] min-w-[600px] w-[75%] h-[70px] rounded-br-[30px] rounded-bl-[30px]">
-      <ul class="h-full flex justify-center items-center gap-8 text-2xl">
-        <li><a href="#home" class="p-3 hover:text-[#0fd] duration-200">Início</a></li>
-        <li><a href="#about" class="p-3 hover:text-[#0fd] duration-200">Sobre mim</a></li>
-        <li><a href="#skills" class="p-3 hover:text-[#0fd] duration-200">Habilidades</a></li>
-        <li><a href="#projetos" class="p-3 hover:text-[#0fd] duration-200">Projetos</a></li>
-      </ul>
-    </div>
+  <header class="header bg-[#151515] relative z-2 w-full max-w-full min-h-[70px] flex justify-center items-center">
+    <ul class="flex gap-8 text-2xl">
+      <li><a href="#home" class="p-3 hover:text-[#0fd] duration-200">Início</a></li>
+      <li><a href="#about" class="p-3 hover:text-[#0fd] duration-200">Sobre mim</a></li>
+      <li><a href="#skills" class="p-3 hover:text-[#0fd] duration-200">Habilidades</a></li>
+      <li><a href="#projetos" class="p-3 hover:text-[#0fd] duration-200">Projetos</a></li>
+    </ul>
   </header>
-  <div id="home" class="section overflow-x-hidden relative">
-    <div id="particles-js" class="absolute top-0 left-0 z-1"></div>
-    <div class="infos h-full w-full absolute z-2 flex flex-col justify-center items-center">
+  <section id="home" class="overflow-x-hidden relative">
+    <div id="particles-js" class="w-fulll h-full absolute top-0 left-0 z-1"></div>
+    <div class="infos h-full w-full flex flex-col justify-center items-center relative z-2">
       <p>Olá, sou</p>
       <h1 class="title text-[#0fd] font-bold">Kauã Santiago</h1>
       <p>web developer full-stack</p>
     </div>
-  </div>
-
-  <div id="about" class="section bg-[#101010] grid place-items-center p-6 relative">
-    <img src="./img/r7.png" alt="" class="absolute top-0  right-0 z-1">
-    <img src="./img/r7.png" alt="" class="absolute bottom-0 left-0 rotate-[180deg] z-1">
-    <div class="infos max-w-[85%] text-center relative z-2">
-      <div class="profile w-full mb-6 flex flex-wrap justify-center items-center gap-3">
-        <img src="./img/me.jpeg" alt="" class="me h-[200px] rounded-[35px]">
-        <div class="pinf">
-          <h2 class="text-[2.2rem] text-left font-bold whitespace-nowrap">Kauã José Pereira Santiago</h2>
-          <p class="text-[1.4rem] text-left">Web developer full-stack</p>
-        </div>
-      </div>
-      <p class="txt broken-all text-[1.2rem]">
-        Olá! Kauã falando, atualmente sou Web Developer fullstack, tenho experiência com várias tecnologias, dentre elas
-        Angular 13, NodeJS, MySQL e um pouco de React, amo programar, coloco sempre o meu máximo nos para que eles sejam
-        levados ao mais alto nível, sou bom em solucionar problemas e, se eu não sei a solução, procuro e estudo sempre
-        para encontrar a melhor solução para ele.
-        Tenho, atualmente, considerável experiência com projetos, desde páginas utilizando somente HTML, CSS e JS até
-        páginas web utilizando de banco de dados feitos em MySQL e API / API Rest feita em NodeJS com o front-end feito
-        em Angular. Procuro sempre melhorar ainda mais minhas habilidades para que eu consiga resultados bons e
-        eficientes com poucas linhas de codigo.</p>
     </div>
-  </div>
-  <div id="skills" class="section bg-[#101010] flex flex-col items-center relative">
-    <img src="./img/r8.png" alt="" class="absolute top-0 right-0 z-1">
-    <img src="./img/r9.png" alt="" class="absolute bottom-0 left-0 z-1">
-    <h2 class="w-[90%] text-[2.6rem] text-right font-bold my-[30px]"><span
-        class="w-fit px-8 py-6 rounded-full">Habilidades</span></h2>
-    <div class="min-w-[90%] max-w-[90%] h-full flex flex-wrap justify-evenly gap-8 p-6">
-      <div class="item relative z-2"><iconify-icon icon="devicon:html5" width="100" height="100"></iconify-icon>
-        <p class="font-semibold">HTML 5</p>
+
+    <section id="about" class="bg-[#101010] grid place-items-center p-6 relative">
+      <img src="./img/r7.png" alt="" class="absolute top-0  right-0 z-1">
+      <img src="./img/r7.png" alt="" class="absolute bottom-0 left-0 rotate-[180deg] z-1">
+      <div class="infos max-w-[85%] text-center relative z-2">
+        <div class="profile w-full mb-6 flex flex-wrap justify-center items-center gap-3">
+          <img src="./img/me.jpeg" alt="" class="me h-[200px] rounded-[35px]">
+          <div class="pinf">
+            <h2 class="text-[2.2rem] text-left font-bold whitespace-nowrap">Kauã José Pereira Santiago</h2>
+            <p class="text-[1.4rem] text-left">Web developer full-stack</p>
+          </div>
+        </div>
+        <p class="txt broken-all text-[1.2rem]">
+          Olá! Kauã falando, atualmente sou Web Developer fullstack, tenho experiência com várias tecnologias, dentre
+          elas
+          Angular 13, NodeJS, MySQL e um pouco de React, amo programar, coloco sempre o meu máximo nos para que eles
+          sejam
+          levados ao mais alto nível, sou bom em solucionar problemas e, se eu não sei a solução, procuro e estudo
+          sempre
+          para encontrar a melhor solução para ele.
+          Tenho, atualmente, considerável experiência com projetos, desde páginas utilizando somente HTML, CSS e JS até
+          páginas web utilizando de banco de dados feitos em MySQL e API / API Rest feita em NodeJS com o front-end
+          feito
+          em Angular. Procuro sempre melhorar ainda mais minhas habilidades para que eu consiga resultados bons e
+          eficientes com poucas linhas de codigo.</p>
       </div>
-      <div class="item relative z-2"><iconify-icon icon="vscode-icons:file-type-css" width="100"
-          height="100"></iconify-icon>
-        <p class="font-semibold">CSS 3</p>
+    </section>
+    <section id="skills" class="bg-[#101010] flex flex-col items-center relative">
+      <img src="./img/r8.png" alt="" class="absolute top-0 right-0 z-1">
+      <img src="./img/r9.png" alt="" class="absolute bottom-0 left-0 z-1">
+      <h2 class="w-[90%] text-[2.6rem] text-right font-bold my-[30px]"><span
+          class="w-fit px-8 py-6 rounded-full">Habilidades</span></h2>
+      <div class="min-w-[90%] max-w-[90%] h-full flex flex-wrap justify-evenly gap-8 p-6">
+        <div class="item relative z-2"><iconify-icon icon="devicon:html5" width="100" height="100"></iconify-icon>
+          <p class="font-semibold">HTML 5</p>
+        </div>
+        <div class="item relative z-2"><iconify-icon icon="vscode-icons:file-type-css" width="100"
+            height="100"></iconify-icon>
+          <p class="font-semibold">CSS 3</p>
+        </div>
+        <div class="item relative z-2"><iconify-icon icon="vscode-icons:file-type-js-official" width="100"
+            height="100"></iconify-icon>
+          <p class="font-semibold">JavaScript</p>
+        </div>
+        <div class="item relative z-2"><iconify-icon icon="logos:nodejs-icon" width="100" height="100"></iconify-icon>
+          <p class="font-semibold">NodeJS</p>
+        </div>
+        <div class="item relative z-2"><iconify-icon icon="logos:mysql" width="100" height="100"></iconify-icon>
+          <p class="font-semibold">MySQL</p>
+        </div>
+        <div class="item relative z-2"><iconify-icon icon="devicon:angular" width="100" height="100"></iconify-icon>
+          <p class="font-semibold">Angular</p>
+        </div>
+        <div class="item relative z-2"><iconify-icon icon="logos:react" width="100" height="100"></iconify-icon>
+          <p class="font-semibold">React</p>
+        </div>
+        <div class="item relative z-2"><iconify-icon icon="devicon:git" width="100" height="100"></iconify-icon>
+          <p class="font-semibold">.git</p>
+        </div>
+        <div class="item relative z-2"><iconify-icon icon="vscode-icons:file-type-typescript-official" width="100"
+            height="100"></iconify-icon>
+          <p class="font-semibold">TypeScript</p>
+        </div>
+        <div class="item relative z-2"><iconify-icon icon="vscode-icons:file-type-php" width="100"
+            height="100"></iconify-icon>
+          <p class="font-semibold">PHP</p></iconify-icon>
+        </div>
+        <div class="item relative z-2"><iconify-icon icon="vscode-icons:file-type-tailwind" width="100"
+            height="100"></iconify-icon>
+          <p class="font-semibold">tailwindcss</p></iconify-icon>
+        </div>
       </div>
-      <div class="item relative z-2"><iconify-icon icon="vscode-icons:file-type-js-official" width="100"
-          height="100"></iconify-icon>
-        <p class="font-semibold">JavaScript</p>
       </div>
-      <div class="item relative z-2"><iconify-icon icon="logos:nodejs-icon" width="100" height="100"></iconify-icon>
-        <p class="font-semibold">NodeJS</p>
-      </div>
-      <div class="item relative z-2"><iconify-icon icon="logos:mysql" width="100" height="100"></iconify-icon>
-        <p class="font-semibold">MySQL</p>
-      </div>
-      <div class="item relative z-2"><iconify-icon icon="devicon:angular" width="100" height="100"></iconify-icon>
-        <p class="font-semibold">Angular</p>
-      </div>
-      <div class="item relative z-2"><iconify-icon icon="logos:react" width="100" height="100"></iconify-icon>
-        <p class="font-semibold">React</p>
-      </div>
-      <div class="item relative z-2"><iconify-icon icon="devicon:git" width="100" height="100"></iconify-icon>
-        <p class="font-semibold">.git</p>
-      </div>
-      <div class="item relative z-2"><iconify-icon icon="vscode-icons:file-type-typescript-official" width="100"
-          height="100"></iconify-icon>
-        <p class="font-semibold">TypeScript</p>
-      </div>
-      <div class="item relative z-2"><iconify-icon icon="vscode-icons:file-type-php" width="100"
-          height="100"></iconify-icon>
-        <p class="font-semibold">PHP</p></iconify-icon>
-      </div>
-      <div class="item relative z-2"><iconify-icon icon="vscode-icons:file-type-tailwind" width="100"
-          height="100"></iconify-icon>
-        <p class="font-semibold">tailwindcss</p></iconify-icon>
-      </div>
-    </div>
-  </div>
 
 
-  <div id="projetos"
-    class="section bg-[#101010] min-w-full max-w-full min-h-screen flex flex-col items-center relative">
-    <img src="./img/r10.png" alt="" class="absolute top-[-2.5px] right-0 z-1">
-    <img src="./img/r10.png" alt="" class="absolute bottom-0 left-0 rotate-[180deg] z-1">
-    <h2 class="w-[90%] text-[2.6rem] font-bold my-[30px]"><span class="w-fit px-8 py-6 rounded-full">Projetos</span>
-    </h2>
-    <div class="min-w-[90%] max-w-[90%] h-fit flex flex-wrap justify-evenly gap-8 p-6">
-      <a target="_blank" href="https://labrary-management-system-front.vercel.app/">
-        <div class="item w-[350px] relative z-2 p-0 hover:translate-y-[-10px]"
-          style="background: url('./img/bibliotech.png') center / cover;">
-          <div class="text-3xl font-semibold w-full h-full bg-[#000a] flex items-end pl-2 rounded-[16px]">Bibliotech
-          </div>
+      <section id="projetos"
+        class="bg-[#101010] min-w-full max-w-full min-h-screen flex flex-col items-center relative">
+        <img src="./img/r10.png" alt="" class="absolute top-[-2.5px] right-0 z-1">
+        <img src="./img/r10.png" alt="" class="absolute bottom-0 left-0 rotate-[180deg] z-1">
+        <h2 class="w-[90%] text-[2.6rem] font-bold my-[30px]"><span class="w-fit px-8 py-6 rounded-full">Projetos</span>
+        </h2>
+        <div class="min-w-[90%] max-w-[90%] h-fit flex flex-wrap justify-evenly gap-8 p-6">
+          <a target="_blank" href="https://labrary-management-system-front.vercel.app/">
+            <div class="item w-[350px] relative z-2 p-0 hover:translate-y-[-10px]"
+              style="background: url('./img/bibliotech.png') center / cover;">
+              <div class="text-3xl font-semibold w-full h-full bg-[#000a] flex items-end pl-2 rounded-[16px]">Bibliotech
+              </div>
+            </div>
+          </a>
+          <a target="_blank" href="https://auth-admin-p.netlify.app">
+            <div class="item w-[350px] relative z-2 p-0 hover:translate-y-[-10px]"
+              style="background: url('./img/auth.png') center / cover;">
+              <div class="text-3xl font-semibold w-full h-full bg-[#000a] flex items-end pl-2 rounded-[16px]">
+                Administrativo
+              </div>
+            </div>
+          </a>
+          <a target="_blank" href="https://evpflix.netlify.app">
+            <div class="item w-[350px] relative z-2 p-0 hover:translate-y-[-10px]"
+              style="background: url('./img/evpflix.png') center / cover;">
+              <div class="text-3xl font-semibold w-full h-full bg-[#000a] flex items-end pl-2 rounded-[16px]">EVPFLIX
+              </div>
+            </div>
+          </a>
+          <a target="_blank" href="https://jacarta.netlify.app">
+            <div class="item w-[350px] relative z-2 p-0 hover:translate-y-[-10px]"
+              style="background: url('./img/jacarta.png') center / cover;">
+              <div class="text-3xl font-semibold w-full h-full bg-[#000a] flex items-end pl-2 rounded-[16px]">Jacarta
+              </div>
+            </div>
+          </a>
+          <a target="_blank" href="https://taillwind-project.netlify.app">
+            <div class="item w-[350px] relative z-2 p-0 hover:translate-y-[-10px]"
+              style="background: url('./img/tailwind.png') center / cover;">
+              <div class="text-3xl font-semibold w-full h-full bg-[#000a] flex items-end pl-2 rounded-[16px]">Tailwind
+                bank
+              </div>
+            </div>
+          </a>
+          <a target="_blank" href="https://lamb-remake.netlify.app">
+            <div class="item w-[350px] relative z-2 p-0 hover:translate-y-[-10px]"
+              style="background: url('./img/lambo.png') center / cover;">
+              <div class="text-3xl font-semibold w-full h-full bg-[#000a] flex items-end pl-2 rounded-[16px]">
+                Lamborghini
+                remake
+              </div>
+            </div>
+          </a>
         </div>
-      </a>
-      <a target="_blank" href="https://auth-admin-p.netlify.app">
-        <div class="item w-[350px] relative z-2 p-0 hover:translate-y-[-10px]"
-          style="background: url('./img/auth.png') center / cover;">
-          <div class="text-3xl font-semibold w-full h-full bg-[#000a] flex items-end pl-2 rounded-[16px]">Administrativo
-          </div>
-        </div>
-      </a>
-      <a target="_blank" href="https://evpflix.netlify.app">
-        <div class="item w-[350px] relative z-2 p-0 hover:translate-y-[-10px]"
-          style="background: url('./img/evpflix.png') center / cover;">
-          <div class="text-3xl font-semibold w-full h-full bg-[#000a] flex items-end pl-2 rounded-[16px]">EVPFLIX</div>
-        </div>
-      </a>
-      <a target="_blank" href="https://jacarta.netlify.app">
-        <div class="item w-[350px] relative z-2 p-0 hover:translate-y-[-10px]"
-          style="background: url('./img/jacarta.png') center / cover;">
-          <div class="text-3xl font-semibold w-full h-full bg-[#000a] flex items-end pl-2 rounded-[16px]">Jacarta</div>
-        </div>
-      </a>
-      <a target="_blank" href="https://taillwind-project.netlify.app">
-        <div class="item w-[350px] relative z-2 p-0 hover:translate-y-[-10px]"
-          style="background: url('./img/tailwind.png') center / cover;">
-          <div class="text-3xl font-semibold w-full h-full bg-[#000a] flex items-end pl-2 rounded-[16px]">Tailwind bank
-          </div>
-        </div>
-      </a>
-      <a target="_blank" href="https://lamb-remake.netlify.app">
-        <div class="item w-[350px] relative z-2 p-0 hover:translate-y-[-10px]"
-          style="background: url('./img/lambo.png') center / cover;">
-          <div class="text-3xl font-semibold w-full h-full bg-[#000a] flex items-end pl-2 rounded-[16px]">Lamborghini
-            remake
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-  <script src="./particles.js"></script>
-  <script src="./demo/js/app.js"></script>
-  <script src="./js/index.js"></script>
-  <script>
-    var count_particles, stats, update;
-    stats = new Stats;
-    stats.setMode(0);
-    stats.domElement.style.position = 'absolute';
-    stats.domElement.style.left = '0px';
-    stats.domElement.style.top = '0px';
-    document.body.appendChild(stats.domElement);
-    count_particles = document.querySelector('.js-count-particles');
-    update = function () {
-      stats.begin();
-      stats.end();
-      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-      }
-      requestAnimationFrame(update);
-    };
-    requestAnimationFrame(update);
-  </script>
+      </section>
+      <script src="./particles.js"></script>
+      <script src="./demo/js/app.js"></script>
+      <script src="./js/index.js"></script>
+      <script>
+        var count_particles, stats, update;
+        stats = new Stats;
+        stats.setMode(0);
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.left = '0px';
+        stats.domElement.style.top = '0px';
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector('.js-count-particles');
+        update = function () {
+          stats.begin();
+          stats.end();
+          if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+          }
+          requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+      </script>
 
 </body>
 

@@ -20,6 +20,11 @@ header div {
     border-top: 2px solid transparent;
 }
 
+#home {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
 #home p:nth-of-type(1) {
     font-size: 1.5rem;
     color: #fffa;
@@ -54,7 +59,7 @@ img:not(.me) {
     box-shadow: 5px 3px 10px 0 rgba(0, 0, 0, 0.2), -5px -3px 10px 0 rgba(200, 200, 200, 0.03);
     border-radius: 16px;
     padding: 10px;
-    transition: all .4s;
+    transition: all .25s;
     position: relative;
     z-index: 3;
 }
@@ -82,11 +87,8 @@ iconoify-icon {
     background-color: #0fd;
 }
 
-.section:nth-of-type(1) {
-    min-height: 100vh;
-}
 
-.section {
+section {
     height: fit-content;
     width: 100%;
     max-width: 100%;
@@ -98,7 +100,25 @@ iconoify-icon {
     display: none;
 }
 
+.bg-menu {
+    height: 0;
+    width: 0;
+    display: none;
+}
+
 @media (max-width: 985px) {
+    .header {
+        background-color: #161616;
+        width: 0;
+        height: 100vh;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: all .3s;
+    }
+
     #home {
         min-height: 100vh;
         width: 100vw;
@@ -109,7 +129,7 @@ iconoify-icon {
     }
 
     .mh p {
-        transition: all .4s;
+        transition: all .25s;
     }
 
     .mh {
@@ -143,42 +163,22 @@ iconoify-icon {
         align-self: start;
     }
 
-    .header {
-        background-color: #161616;
-        width: 0;
-        height: 100vh;
-        position: fixed;
-        z-index: 999;
-        top: 0;
-        left: 0;
-        transition: all .5s;
-    }
-
-    .header .hdr {
-        min-width: 100%;
-        min-height: 100%;
-        opacity: 0;
-        position: relative;
-        z-index: 999;
-    }
-
-    header.actived {
-        min-height: 100vh;
-        width: 55vw;
-    }
-
-    header.actived .hdr,
-    header.actived .hdr ul {
-        opacity: 1;
-        border: none;
+    .header ul {
+        display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        gap: 35px;
-        overflow: hidden;
-        white-space: nowrap;
         font-size: 30px;
         font-weight: 600;
+        gap: 35px;
     }
+
+
+    .header.actived {
+        min-height: 100vh;
+        width: 75vw;
+        opacity: 1;
+    }
+
 
     .mh.actived p:nth-child(2) {
         width: 0;
@@ -188,7 +188,7 @@ iconoify-icon {
     .mh.actived p:first-child,
     .mh.actived p:last-child {
         width: 75%;
-        transition-delay: .2s;
+        transition-delay: .01s;
     }
 
     .mh.actived p:first-child {
@@ -250,6 +250,11 @@ iconoify-icon {
 
     #home p {
         font-size: 1.2rem;
+    }
+
+    #about h2 {
+        white-space: wrap;
+        text-align: center;
     }
 
     #projetos .item {

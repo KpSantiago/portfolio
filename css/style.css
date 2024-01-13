@@ -265,9 +265,10 @@ iconoify-icon {
 }
 
 @media (max-width: 840px) {
+
     .project,
-    .project:hover {
-        transform: scale(.9);
+    .project:hover:disabled {
+        transform: scale(1);
     }
 
     .project img {
@@ -297,17 +298,20 @@ iconoify-icon {
     #about h2 {
         font-size: 28px;
     }
+
     .project,
     .project:hover {
-        transform: scale(.9);
+        transform: scale(1);
     }
 }
 
 @media (max-width: 650px) {
+
     .project,
-    .project:hover {
+    .project:hover:disabled {
         transform: scale(.9);
     }
+
     #home h1 {
         font-size: 4.5rem;
     }
@@ -326,6 +330,7 @@ iconoify-icon {
 }
 
 @media (max-width: 623px) {
+
     .project,
     .project:hover {
         transform: scale(.8);
@@ -359,7 +364,8 @@ iconoify-icon {
         text-align: center;
     }
 
-    .project, .project:hover {
+    .project,
+    .project:hover {
         transform: scale(.6);
     }
 }

@@ -51,6 +51,15 @@ section {
     font-size: 1.5rem;
 }
 
+button {
+    margin-top: 15px;;
+    box-shadow: 0 0 10px 0 #0fd;
+}
+
+button a {
+    font-size: 20px;
+}
+
 #particle-js {
     z-index: 1;
 }
@@ -72,7 +81,6 @@ section {
     padding: 10px;
     transition: all .25s;
 }
-
 
 #skills .item:hover {
     transform: translateY(-10px);

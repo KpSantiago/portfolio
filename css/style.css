@@ -264,7 +264,7 @@ iconoify-icon {
     }
 }
 
-@media (max-width: 816px) {
+@media (max-width: 840px) {
     .project img {
         height: 50%;
     }

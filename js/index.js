@@ -48,8 +48,7 @@ const projects_array = [
         nome: ' Lamborghini Remake',
         img_url: './img/lambo.png',
         technologies: [{ nome: 'logos:react' }, { nome: 'vscode-icons:file-type-typescript-official' }],
-        sinopse: `Bibliotech é um site que desenvolvi pensando num sistema escolar
-        L.B. é um projeto que fiz como atividade escolar, no qual teríamos que fazer uma landing page em React.`,
+        sinopse: `L.B. é um projeto que fiz como atividade escolar, no qual teríamos que fazer uma landing page em React.`,
         link_project: 'https://lamb-remake.netlify.app'
     }
 ];

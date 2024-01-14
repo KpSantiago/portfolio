@@ -22,11 +22,11 @@ const projects_array = [
         link_project: 'https://auth-admin-p.netlify.app'
     },
     {
-        nome: 'EVPFLIX',
-        img_url: '/img/evpflix.png',
-        technologies: [{ nome: 'devicon:angular' }],
-        sinopse: `EVPFLIX foi um projeto que fiz com alguns colegas de classe, é um projeto feito com o consumo da API do youtube com o objetivo de fazer com que os alunos possam ter acesso apenas a aulas educativas.`,
-        link_project: 'https://evpflix.netlify.app'
+        nome: 'Moments',
+        img_url: '/img/moments.png',
+        technologies: [{ nome: 'devicon:angular' }, { nome: 'logos:nodejs-icon' }, { nome: 'logos:mysql' }],
+        sinopse: `Moments é um projeto de conclusão do curso de Angular que fiz pelo canal Matheus Battist, que consiste em um projeto no qual é possível compartilhar momentos de sua vida, ele não fez o backend no curso, então decidi arriscar e fazê-lo do meu jeito.`,
+        link_project: 'https://app-moments.netlify.app/'
     },
     {
         nome: 'Jacarta',
@@ -34,6 +34,13 @@ const projects_array = [
         technologies: [{ nome: 'devicon:angular' }],
         sinopse: `Jacarta é um site no qual é consumida uma api de filme da TMDB com uma proposta de o usuário ver em tempo real os principais filmes da atualidade.`,
         link_project: 'https://jacarta.netlify.app'
+    },
+    {
+        nome: 'EVPFLIX',
+        img_url: '/img/evpflix.png',
+        technologies: [{ nome: 'devicon:angular' }],
+        sinopse: `EVPFLIX foi um projeto que fiz com alguns colegas de classe, é um projeto feito com o consumo da API do youtube com o objetivo de fazer com que os alunos possam ter acesso apenas a aulas educativas.`,
+        link_project: 'https://evpflix.netlify.app'
     },
     {
         nome: 'Tailwind Bank',

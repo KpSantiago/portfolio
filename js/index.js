@@ -26,7 +26,7 @@ const projects_array = [
         img_url: '/img/evpflix.png',
         technologies: [{ nome: 'devicon:angular' }],
         sinopse: `EVPFLIX foi um projeto que fiz com alguns colegas de classe, é um projeto feito com o consumo da API do youtube com o objetivo de fazer com que os alunos possam ter acesso apenas a aulas educativas.`,
-        link_project: 'https://labrary-management-system-front.vercel.app/'
+        link_project: 'https://evpflix.netlify.app'
     },
     {
         nome: 'Jacarta',
